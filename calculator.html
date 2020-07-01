@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">.
+    <script src="time_spent.js"></script>
+    <script src="calculator.js"></script>
+    <script src="ravas.js"></script>
+</head>
+
+<body onload="getSecs()">
+  <h1>Calculatoare utile</h1>
+  <div class="meniu">
+    <a class="left" href="index.html">Home</a>
+    <a class="left" href="quiz.html">Quiz</a>
+    <a class="left" href="calculator.html">Calculator</a>
+  </div>
+  <label>1. Ridicare la patrat:<input type="number" id="square-input" size="2" /></label>
+  <button id="square-button">Calculeaza</button>
+  <br />
+  <div id="solution1"></div><br />
+
+  <label>2. Ridicare la cub:<input type="number" id="half-input" size="2" /></label>
+  <button id="half-button">Calculeaza</button>
+  <br />
+  <div id="solution2"></div><br />
+
+  <label>3. Numarul:<input type="number" id="percent1-input" size="2" /></label>
+  <label>la puterea:<input type="number" id="percent2-input" size="2" /></label>
+  <button id="percent-button">Calculeaza</button>
+  <br />
+  <div id="solution3"></div><br />
+
+  <label>4. Aria unui cerc cu raza:<input type="number" id="area-input" size="2" /></label>
+  <button id="area-button">Calculeaza</button>
+  <br />
+  <div id="solution4"></div><br />
+
+  <label>5. Radacina patrata:<input type="number" id="sqrt-input" size="2" /></label>
+  <button id="sqrt-button">Calculeaza</button>
+  <br />
+  <div id="solution5"></div><br />
+  <footer class="footer">
+    <script type="text/javascript">
+      getQuote();
+    </script>
+  </footer>
+  <a class = "jos">Timp petrecut pe pagina: <input size=5 id="timespent" name="timespent"></a>
+</body>
+
+</html>

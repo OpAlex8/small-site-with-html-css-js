@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="typewriter.js"></script>
+<script src="time_spent.js"></script>
+<script src="ravas.js"></script>
+<script src="woldcount.js"></script>
+<script src="descriere.js"></script>
+
+</head>
+<body onload="typeWriter(); getSecs(); nrWords(); scriere();">
+  <div class="meniu">
+    <a class="left" href="index.html">Home</a>
+    <a class="left" href="quiz.html">Quiz</a>
+    <a class="left" href="calculator.html">Calculator</a>
+  </div>
+
+
+<h1 id = "demo"></h1>
+<h3>Ridicarea la putere</h3>
+<div id = "ridicareLaPutere1"></div>
+<p></p>
+<div id = "ridicareLaPutere2"></div>
+
+<div id="test"></div>
+
+  <footer class="footer">
+    <script type="text/javascript">
+      getQuote();
+    </script>
+    <p id = "count"></p>
+  </footer>
+  <a class = "jos">Timp petrecut pe pagina: <input size=5 id="timespent" name="timespent"></a>
+</body>
+</html>

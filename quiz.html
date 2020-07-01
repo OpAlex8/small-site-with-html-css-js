@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="typewriter.js"></script>
+<script src="time_spent.js"></script>
+<script src="ravas.js"></script>
+<script src="woldcount.js"></script>
+<script src="quiz.js"></script>
+
+</head>
+  <body onload="getSecs(); nrWords();">
+  <div class="meniu">
+      <a class="left" href="index.html">Home</a>
+      <a class="left" href="quiz.html">Quiz</a>
+      <a class="left" href="calculator.html">Calculator</a>
+  </div>
+
+  <h1>Quiz</h1>
+
+  <div>
+    <form name = "quiz" onsubmit="return onSubmit()">
+      <div class = "question">
+        <h2>Bifati numerele care sunt patrate perfecte.</h2>
+          <input type="checkbox" name="q1cb1" value="a" id = "Checkq1cb1">a. 3<br>
+          <input type="checkbox" name="q1cb2" value="b" id = "Checkq1cb2">b. 4<br>
+          <input type="checkbox" name="q1cb3" value="c" id = "Checkq1cb3">c. 8<br>
+          <input type="checkbox" name="q1cb4" value="d" id = "Checkq1cb4">d. 9<br>
+          <input type="checkbox" name="q1cb5" value="e" id = "Checkq1cb5">e. 12<br>
+      </div>
+      <div class = "question">
+        <h2>Bifati numerele care sunt cuburi perfecte.</h2>
+          <input type="checkbox" name="q2cb1" value="a" id = "Checkq2cb1">a. 8<br>
+          <input type="checkbox" name="q2cb2" value="b" id = "Checkq2cb2">b. 16<br>
+          <input type="checkbox" name="q2cb3" value="c" id = "Checkq2cb3">c. 27<br>
+          <input type="checkbox" name="q2cb4" value="d" id = "Checkq2cb4">d. 81<br>
+          <input type="checkbox" name="q2cb5" value="e" id = "Checkq2cb5">e. 64<br>
+      </div>
+      <div class = "question">
+        <h2>Cat face 2<sup>3</sup>?</h2>
+          <input type="checkbox" name="q3cb1" value="a" id = "Checkq3cb1">a. 2<br>
+          <input type="checkbox" name="q3cb2" value="b" id = "Checkq3cb2">b. 5<br>
+          <input type="checkbox" name="q3cb3" value="c" id = "Checkq3cb3">c. 6<br>
+          <input type="checkbox" name="q3cb4" value="d" id = "Checkq3cb4">d. 8<br>
+          <input type="checkbox" name="q3cb5" value="e" id = "Checkq3cb5">e. 9<br>
+      </div>
+      <button type="submit" id = "button">Submit Quiz</button>
+  </div>
+
+  <footer class="footer">
+    <script type="text/javascript">
+      getQuote();
+    </script>
+    <p id = "count"></p>
+  </footer>
+  <a class = "jos">Timp petrecut pe pagina: <input size=5 id="timespent" name="timespent"></a>
+</body>
+</html>
